@@ -1,7 +1,7 @@
 import type { Page } from "@playwright/test";
 
 export const baseURL =
-  process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
+  process.env.NEXT_PUBLIC_BASE_URL;
 
 export const prefetch = async () => {
   /* Fetch every page and wait for it to load */
